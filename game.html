@@ -1,40 +1,57 @@
 <!-- this is an HTML document for game.html made by Kami Archer-->
 
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--title for my rock/paper/scissors game-->
     <title>Interactive Game - Cut, Cover, Crush</title>
     <!--link to respective js functonality for the page -->
     <script src="innerHTML.js"></script>
     <!--link to respective css styling for the page -->
-    <link rel="stylesheet" href="styling.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styling.css" />
+  </head>
+  <body>
     <header>
-        <h1 id="the-head">2.3 Gameplay</h1>
-        <button onclick="updateText()">Click to Start!</button>
+      <h1 id="the-head">2.3 Gameplay</h1>
+      <!--will change the h1 text to a different saying once the button is clicked-->
+      <button onclick="updateText()">Click to Start!</button>
     </header>
-    <br>
+    <!--added breaks just to give some space between everything for aestheic reasons-->
+    <br />
     <div class="options">
-        <button onclick="playtime('cut')"><img src="scissors.jpeg" alt="scissors"></button>
-        <button onclick="playtime('crush')"><img src="rock.jpeg" alt="rock"></button>
-        <button onclick="playtime('cover')"><img src="tree.jpeg" alt="tree"></button>
+      <!--each button is a choice for the player in the game to choose from and I chose to make the options the appearance of images of what I wanted instead of just words to add to creativity but also demonstrate my understanding of what I have learned in the course thus far-->
+      <button onclick="playtime('cut')">
+        <img src="scissors.jpeg" alt="scissors" />
+      </button>
+      <button onclick="playtime('crush')">
+        <img src="rock.jpeg" alt="rock" />
+      </button>
+      <button onclick="playtime('cover')">
+        <img src="tree.jpeg" alt="tree" />
+      </button>
     </div>
-    <br>
-    <div class="human">
-        <h1>You</h1>
+    <br />
+    <div id="human">
+    <!--will be the way tally is kept for human input-->
+      <h1>You:</h1> 
+      <div class="scores">
+        <span id="humanPoints">0</span>
     </div>
-    <div class="computer">
-        <h1>AI</h1>
+    </div>
+    <div id="computer">
+        <!--the way the tally is kept for the computer's response-->
+      <h1>AI:</h1>
+      <!--side note for the "AI" text above, I know it is not AI, I just thought it would sound pretty to have it say that-->
     </div>
     <div class="scores">
-        <h2>Scores: </h2>
+        <span id="computerPoints">0</span>
     </div>
-</body>
+    <div id="winner">
+        <!--final display of AI v Human winner-->
+      <h2>And the winner is:</h2>
+    </div>
+   
+        
+  </body>
 </html>
-
-
-
-
