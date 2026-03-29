@@ -1,0 +1,26 @@
+body header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: lavender;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: blueviolet;
+    font-size: 3.5rem;
+}
+
+.options {
+    margin-bottom: 30px;
+}
+
+.options button {
+    font-size: 7.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border-radius: 50px;
+    border-color: red;
+}

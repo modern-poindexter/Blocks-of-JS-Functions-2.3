@@ -1,12 +1,40 @@
+<!-- this is an HTML document for game.html made by Kami Archer-->
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Game Play</title>
+    <!--title for my rock/paper/scissors game-->
+    <title>Interactive Game - Cut, Cover, Crush</title>
+    <!--link to respective js functonality for the page -->
+    <script src="innerHTML.js"></script>
+    <!--link to respective css styling for the page -->
+    <link rel="stylesheet" href="styling.css">
 </head>
 <body>
-    
+    <header>
+        <h1 id="the-head">2.3 Gameplay</h1>
+        <button onclick="updateText()">Click to Start!</button>
+    </header>
+    <br>
+    <div class="options">
+        <button onclick="playtime('cut')"><img src="scissors.jpeg" alt="scissors"></button>
+        <button onclick="playtime('crush')"><img src="rock.jpeg" alt="rock"></button>
+        <button onclick="playtime('cover')"><img src="tree.jpeg" alt="tree"></button>
+    </div>
+    <br>
+    <div class="human">
+        <h1>You</h1>
+    </div>
+    <div class="computer">
+        <h1>AI</h1>
+    </div>
+    <div class="scores">
+        <h2>Scores: </h2>
+    </div>
 </body>
 </html>
 
-<link rel="stylesheet" href="styling.css">
+
+
+
